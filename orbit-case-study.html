@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#fbfaf7" name="theme-color"/><meta content="Anna Philip — Industrial Design, product thinking and UX." name="description"/><title>Orbit — Smarter Flow. Better Care. · Anna Philip</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap');
+:root{--paper:#fbfaf7;--white:#fff;--ink:#1e1d1b;--muted:#77736d;--line:#e8e4dc;--violet:#7c63d8;--orange:#dc815b;--sage:#839b82;--yellow:#e7c36c;--serif:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+.site-nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:rgba(251,250,247,.88);backdrop-filter:blur(16px)}
+.nav-inner{width:min(1160px,calc(100% - 48px));margin:auto;display:flex;align-items:center;justify-content:space-between}
+.wordmark{font:700 17px 'Space Grotesk';letter-spacing:-.07em}.wordmark i{font-style:normal;color:var(--violet)}
+.nav-links{display:flex;gap:28px;align-items:center;font-size:12px;color:#625f59}.nav-links a:hover{color:var(--violet)}
+.nav-note{font:12px 'DM Mono';color:#99938a}
+.kicker{font:500 10px 'DM Mono';letter-spacing:.13em;text-transform:uppercase;color:#8a8379}
+.display{font:600 clamp(58px,9vw,116px)/.91 'Space Grotesk';letter-spacing:-.09em}
+.h2{font:600 clamp(36px,5.3vw,65px)/.98 'Space Grotesk';letter-spacing:-.075em;margin:0}
+.body-copy{font-size:15px;line-height:1.85;color:#68645e}
+.small-copy{font-size:12px;line-height:1.7;color:var(--muted)}
+.hand{font:500 24px 'Caveat';color:var(--violet)}
+.rule{height:1px;background:var(--line);margin:0}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--ink);font-size:12px;font-weight:600;transition:gap .2s}.btn:hover{gap:20px}
+.pill{display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:8px 12px;font:10px 'DM Mono';color:#77716a}
+.section-pad{padding:100px 0}
+.site-footer{padding:55px 0 35px;border-top:1px solid var(--line);margin-top:50px}
+.footer-row{display:flex;align-items:end;justify-content:space-between;gap:30px}
+.footer-title{font:600 clamp(38px,7vw,80px)/.95 'Space Grotesk';letter-spacing:-.08em;margin:10px 0 0}
+.footer-meta{font:10px 'DM Mono';color:var(--muted);line-height:1.8;text-align:right}
+.cursor-wash{position:fixed;z-index:0;inset:0;pointer-events:none;opacity:.58;background:radial-gradient(440px circle at var(--mx,50%) var(--my,25%),rgba(190,173,247,.28),transparent 65%),radial-gradient(380px circle at calc(var(--mx,50%) + 15%) calc(var(--my,25%) + 12%),rgba(247,204,170,.22),transparent 68%);transition:background .09s linear}
+body>*:not(.cursor-wash){position:relative;z-index:1}::selection{background:#dcd2fb;color:#292139}
+@media(max-width:700px){.wrap,.nav-inner{width:min(100% - 32px,1160px)}.site-nav{height:66px}.nav-links{gap:15px;font-size:11px}.nav-note{display:none}.section-pad{padding:70px 0}.footer-row{display:block}.footer-meta{text-align:left;margin-top:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+.case-wrap{width:min(1080px,calc(100% - 48px));margin:auto}
+.case-nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.case-nav .back{font:11px 'DM Mono';color:#77716a}
+.case-hero{padding:70px 0 55px}
+.case-hero-grid{display:grid;grid-template-columns:1fr .95fr;gap:7%;align-items:center}
+.case-title{font:600 clamp(62px,9vw,112px)/.88 'Space Grotesk';letter-spacing:-.095em;margin:15px 0 20px}
+.case-subtitle{font:italic 25px var(--serif);color:var(--accent);margin-bottom:20px}
+.case-intro{max-width:500px;font-size:15px;line-height:1.85;color:#6e6962}
+.case-hero-image img{width:100%;max-height:440px;object-fit:cover;border-radius:3px}
+.case-caption{display:flex;justify-content:space-between;gap:15px;font:10px 'DM Mono';color:#9a9287;margin-top:12px}
+.case-meta{display:grid;grid-template-columns:repeat(4,1fr);border-block:1px solid var(--line);padding:17px 0;margin-top:40px}
+.case-meta div{padding:0 18px;border-right:1px solid var(--line)}.case-meta div:first-child{padding-left:0}.case-meta div:last-child{border:0}
+.case-meta small{display:block;font:10px 'DM Mono';color:#999187;text-transform:uppercase;margin-bottom:7px}.case-meta b{font:600 13px 'Space Grotesk'}
+.case-section{padding:72px 0;border-bottom:1px solid var(--line)}
+.case-heading{display:grid;grid-template-columns:.65fr 1.35fr;gap:7%;align-items:start;margin-bottom:28px}
+.case-heading .num{font:10px 'DM Mono';letter-spacing:.12em;color:var(--accent)}
+.case-heading h2{font:600 clamp(34px,5.3vw,58px)/.98 'Space Grotesk';letter-spacing:-.08em;margin:10px 0 0}
+.case-content{min-width:0}.case-content p{font-size:14px;line-height:1.9;color:#6d6861;margin:0 0 16px}.case-content p.lead{font-size:17px;color:#393630;line-height:1.8}
+.case-content h3{font:600 20px 'Space Grotesk';letter-spacing:-.04em;margin:30px 0 12px}
+.case-content ul{padding-left:20px;color:#6d6861;font-size:14px;line-height:1.9}
+.case-image{margin:28px 0}.case-image img{width:100%;height:auto;max-height:650px;object-fit:contain;background:#f2f0eb}
+.case-image figcaption{font:10px 'DM Mono';color:#91897e;margin-top:10px}
+.case-split{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin:30px 0}
+.case-split img{width:100%;height:auto;object-fit:contain;background:#f2f0eb}
+.case-split .copy p{margin-bottom:10px}
+.sticky-row{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:25px 0}
+.sticky-note{background:#fff3cf;padding:18px 17px;min-height:155px;box-shadow:0 6px 15px rgba(44,35,15,.07);transform:rotate(-1deg)}
+.sticky-note:nth-child(2){background:#eaf2ff;transform:rotate(1deg)}.sticky-note:nth-child(3){background:#edf4e8;transform:rotate(-.6deg)}.sticky-note:nth-child(4){background:#f6eaf3;transform:rotate(.8deg)}
+.sticky-note b{font:600 12px 'Space Grotesk';display:block;margin-bottom:9px}.sticky-note p{font-size:12px;line-height:1.6;color:#625d55;margin:0}
+.stage-line{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:30px 0 12px;position:relative}
+.stage-line:before{content:'';position:absolute;top:15px;left:6%;right:6%;height:1px;background:#b9addd}
+.stage{position:relative;padding:0 10px 0 0}.stage .dot{width:30px;height:30px;border-radius:50%;border:1px solid #9d8bcf;background:#fff;display:grid;place-items:center;font:11px 'DM Mono';color:#6e58b4;position:relative;z-index:1}
+.stage b{display:block;font:600 13px 'Space Grotesk';margin:13px 0 6px}.stage p{font-size:11px!important;line-height:1.55!important}
+.screen-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center;margin:42px 0}
+.screen-row:nth-of-type(even){grid-template-columns:1.1fr .9fr}
+.screen-row figure{margin:0}.screen-row img{width:100%;height:auto;object-fit:contain;background:#f1eff8}
+.screen-row figcaption{font:10px 'DM Mono';color:#938b80;margin-top:10px}
+.screen-row h3{margin-top:0}
+.role-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.role{border-top:2px solid var(--accent);padding:14px 10px 10px 0}.role b{font:600 15px 'Space Grotesk'}.role p{font-size:12px;line-height:1.7;margin:8px 0 0}
+.callout{padding:19px 22px;border-left:3px solid var(--accent);background:#f2effa;margin:25px 0}.callout p{color:#47413e;margin:0}
+.image-pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:28px 0}
+.image-pair figure{margin:0}.image-pair img{width:100%;height:auto;max-height:520px;object-fit:contain;background:#f3f0e9}
+.image-pair figcaption{font:10px 'DM Mono';color:#8f887e;margin-top:10px}
+.full-bleed{margin:35px calc((min(1080px,100vw - 48px) - 100vw)/2);padding:30px max(24px,calc((100vw - 1080px)/2));background:#f1eee7}
+.full-bleed img{width:100%;height:auto;max-height:700px;object-fit:contain}
+.next-project{padding:55px 0 90px;display:flex;justify-content:space-between;align-items:end;gap:20px}
+.next-project h2{font:600 clamp(38px,6vw,72px)/.95 'Space Grotesk';letter-spacing:-.08em;margin:10px 0}
+@media(max-width:760px){.case-wrap{width:calc(100% - 32px)}.case-hero-grid,.case-heading,.case-split,.screen-row,.image-pair{grid-template-columns:1fr;gap:22px}.case-hero{padding:55px 0 35px}.case-meta{grid-template-columns:repeat(2,1fr);gap:15px}.case-meta div:nth-child(2){border:0}.case-meta div:nth-child(-n+2){padding-bottom:12px;border-bottom:1px solid var(--line)}.case-meta div:nth-child(3){padding-left:0}.case-section{padding:54px 0}.sticky-row,.role-grid{grid-template-columns:repeat(2,1fr)}.stage-line{grid-template-columns:1fr;gap:15px}.stage-line:before{top:15px;bottom:15px;left:14px;right:auto;width:1px;height:auto}.stage{display:grid;grid-template-columns:30px 1fr;column-gap:12px}.stage .dot{grid-row:span 2}.stage b{margin:0 0 4px}.next-project{display:block}.next-project .btn{margin-top:20px}}
+
+:root{--accent:#7b63d6}
+.case-hero-image img{background:#f0eef8}
+
+.plant-dock{position:fixed;right:17px;top:50%;transform:translateY(-50%);z-index:80;width:76px;padding:12px 8px 13px;background:linear-gradient(145deg,rgba(255,255,255,.62),rgba(245,240,255,.38));backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);border:1px solid rgba(255,255,255,.78);border-radius:24px;box-shadow:0 12px 35px rgba(70,55,100,.14),inset 0 1px 0 rgba(255,255,255,.85);text-align:center}.plant-dock:before{content:'';position:absolute;inset:3px;border:1px solid rgba(150,130,190,.13);border-radius:20px;pointer-events:none}.plant-dock svg{width:56px;height:112px;overflow:visible}.plant-dock .plant-caption{font:7px 'DM Mono';letter-spacing:.08em;color:#777083;margin:3px 0 7px}.plant-dock .growth-label{font:8px 'DM Mono';color:#777;margin-top:2px}.plant-dock .stem{stroke:#6c956c;stroke-width:3;stroke-linecap:round;fill:none;stroke-dasharray:100;stroke-dashoffset:calc(100 - var(--growth,0)*1)}.plant-dock .branch{stroke:#6c956c;stroke-width:2.5;stroke-linecap:round;fill:none;opacity:var(--leaf-opacity,.1)}.plant-dock .leaf{fill:#8fb58b;opacity:var(--leaf-opacity,.1)}.plant-dock .bloom{fill:#d9a5d9;opacity:var(--bloom-opacity,.08)}.plant-dock .seed{fill:#b58b58}.plant-dock .pluck-hint{font:8px/1.4 'DM Mono';color:#766a83;margin:8px 0 5px}.plant-dock button{display:block;width:100%;border:1px solid rgba(143,121,180,.22);background:rgba(255,255,255,.58);color:#67577d;border-radius:16px;padding:7px 3px;font:8px 'DM Mono';cursor:pointer}.flower-modal{position:fixed;inset:0;z-index:120;background:rgba(35,31,27,.45);display:none;place-items:center;padding:20px}.flower-modal.open{display:grid}.flower-box{background:#fffdf8;width:min(420px,100%);padding:28px;border-radius:16px;box-shadow:0 20px 80px rgba(0,0,0,.2)}.flower-box h3{font:600 28px 'Space Grotesk';letter-spacing:-.05em;margin:0 0 8px}.flower-box p{font-size:13px;color:#777;line-height:1.6}.flower-box input{width:100%;padding:13px;border:1px solid #ded8ce;border-radius:7px;font:14px 'DM Sans';margin:10px 0 15px}.flower-actions{display:flex;gap:10px}.flower-actions button{border:0;border-radius:30px;padding:11px 15px;cursor:pointer;font:11px 'DM Mono'}.flower-save{background:#765b9d;color:white}.flower-close{background:#eee9e1;color:#514a42}.flower-modal canvas{display:none}
+@media(max-width:760px){.plant-dock{right:5px;top:auto;bottom:12px;transform:none;width:58px;padding:6px 5px;border-radius:14px}.plant-dock svg{width:42px;height:75px}.plant-dock button{font-size:8px;padding:6px 1px}.plant-dock .plant-caption{font-size:7px}}
+
+        .scroll-progress{position:fixed;z-index:100;left:0;right:0;top:0;height:3px;background:rgba(30,29,27,.05);pointer-events:none}
+        .scroll-progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,#9a82e8,#e9a98e,#9bc5ae)}
+        .scroll-reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+        .scroll-reveal.is-visible{opacity:1;transform:none}
+        @media(max-width:700px){.scroll-reveal{opacity:1;transform:none}}
+        @media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
+        
+        .team-project-tag{display:inline-flex;align-items:center;border:1px solid #dcd5e9;border-radius:99px;padding:7px 11px;margin:10px 0 14px;background:#f7f4fc;color:#7056b4;font:10px 'DM Mono';letter-spacing:.12em}
+        </style></head><body><div aria-hidden="true" class="scroll-progress"><span></span></div><div aria-hidden="true" class="cursor-wash"></div><nav class="case-nav"><a class="wordmark" href="index.html">ANNA <i style="font-style:normal;color:var(--violet)">PHILIP.</i></a><a class="back" href="index.html#work">← Back to selected work</a></nav>
+<main class="case-wrap">
+<header class="case-hero">
+<div class="case-hero-grid">
+<div><div class="kicker">01 / HEALTHCARE UX · PERSONAL PROJECT</div><h1 class="case-title">ORBIT<span style="color:#8063d4">.</span></h1><span class="team-project-tag">TEAM PROJECT</span><div class="case-subtitle">Smarter Flow. Better Care.</div>
+<p class="case-intro">Making the surgical care journey more visible. A proposed QR-enabled patient-flow system connecting patients, clinical staff, families and hospital administrators across the operating-theatre journey.</p>
+<div style="display:flex;gap:9px;flex-wrap:wrap;margin-top:22px"><span class="pill">Healthcare UX</span><span class="pill">Workflow optimisation</span><span class="pill">Digital product</span></div>
+</div>
+<div class="case-hero-image"><img alt="Orbit dashboard and role-based interface overview" src="assets/orbit-device-overview.jpg"/><div class="case-caption"><span>ORBIT / INTERFACE OVERVIEW</span><span>01</span></div></div>
+</div>
+<div class="case-meta"><div><small>Project</small><b>Personal concept</b></div><div><small>Context</small><b>Aravind Eye Care workflows</b></div><div><small>Recognition</small><b>Top 20 hackathon teams</b></div><div><small>Focus</small><b>Patient-flow visibility</b></div></div>
+</header>
+<section class="case-section"><div class="case-heading"><div class="num">01 / CASE STUDY</div><h2>The question behind Orbit</h2></div><div class="case-content">
+<p class="lead">What if everyone involved in a patient's journey could see where that patient was, what had happened and what needed to happen next?</p>
+<p>Hospitals are complex systems. Patients move through multiple stages, healthcare professionals manage different responsibilities, and information needs to reach the right people at the right time.</p>
+<p>Orbit is my exploration of a centralised digital patient-flow management system for operating-theatre workflows in the context of Aravind Eye Care System. The project began by looking at the coordination problem behind the interface — not just what a dashboard should display, but what different people need to know to keep a patient journey moving.</p>
+</div></section><section class="case-section"><div class="case-heading"><div class="num">02 / CASE STUDY</div><h2>Understanding the people in the system</h2></div><div class="case-content">
+<p class="lead">One patient journey, four different perspectives.</p>
+<p>The same patient moves through the same process, but the questions each person needs answered are different. I used these role needs to shape the information structure and the interface direction.</p>
+<div class="role-grid">
+<div class="role"><b>Surgeons</b><p>Need relevant patient-status information to coordinate care and understand readiness.</p></div>
+<div class="role"><b>Nurses</b><p>Need to monitor movement, update stages and make handoffs visible.</p></div>
+<div class="role"><b>Administrators</b><p>Need an overall view of patient progression and operational status.</p></div>
+<div class="role"><b>Billing staff</b><p>Need relevant status and completion information for administrative processes.</p></div>
+</div>
+<div class="callout"><p><b>Design takeaway:</b> A single interface cannot answer every role's questions equally well. Orbit explores a shared patient record with role-specific views.</p></div>
+</div></section><section class="case-section"><div class="case-heading"><div class="num">03 / CASE STUDY</div><h2>Five stages. One connected journey.</h2></div><div class="case-content">
+<p class="lead">Orbit structures the patient journey around five stages, giving the team a shared language for progression.</p>
+<div class="stage-line">
+<div class="stage"><span class="dot">01</span><b>Waiting</b><p>Patient is registered and awaiting the next stage.</p></div>
+<div class="stage"><span class="dot">02</span><b>Daycare</b><p>Patient progresses into the daycare stage.</p></div>
+<div class="stage"><span class="dot">03</span><b>Block Room</b><p>Patient moves to the block room before OT.</p></div>
+<div class="stage"><span class="dot">04</span><b>OT</b><p>Patient reaches the operating theatre.</p></div>
+<div class="stage"><span class="dot">05</span><b>Completed</b><p>The tracked patient journey is marked complete.</p></div>
+</div>
+<p>The intention is to make patient progression easier to understand without relying entirely on repeated manual status enquiries. Stage and time tracking are explored as part of this shared view.</p>
+</div></section><section class="case-section"><div class="case-heading"><div class="num">04 / CASE STUDY</div><h2>Turning workflow into interface</h2></div><div class="case-content">
+<p class="lead">The interface exploration brings patient tracking and operational visibility into a centralised web-based dashboard.</p>
+<div class="screen-row">
+<figure><img alt="Orbit operations dashboard patient list and status view" src="assets/orbit-patient-flow.jpg"/><figcaption>01 / OPERATIONS DASHBOARD — patient flow and status overview</figcaption></figure>
+<div><h3>Operations dashboard</h3><p>The dashboard is designed to make the overall patient journey scannable. It brings patient records, stage information and operational status into one place, so administrators can understand what is moving and what may need attention.</p><p class="small-copy">Design focus: overview, hierarchy, status visibility and information density.</p></div>
+</div>
+<div class="screen-row">
+<div><h3>Surgeon panel</h3><p>The surgeon-facing view narrows the information to what is relevant to the clinical role. It explores a queue-based layout with patient readiness and status information presented in a more focused way.</p><p class="small-copy">Design focus: role relevance, quick scanning and reduced information noise.</p></div>
+<figure><img alt="Orbit surgeon queue and readiness panel" src="assets/orbit-surgeon-panel.jpg"/><figcaption>02 / SURGEON PANEL — queue, readiness and status</figcaption></figure>
+</div>
+<div class="screen-row">
+<figure><img alt="Orbit nurse station interface" src="assets/orbit-nurse-station.jpg"/><figcaption>03 / NURSE STATION — preparation, checklist and handoff</figcaption></figure>
+<div><h3>Nurse station</h3><p>The nurse experience explores how preparation and stage updates can be made visible in the workflow. The aim is to support clear handoffs and reduce reliance on memory or repeated verbal updates.</p><p class="small-copy">Design focus: task sequence, completion states and handoff clarity.</p></div>
+</div>
+<div class="screen-row">
+<div><h3>Family timeline</h3><p>Families need progress information in language that is easy to understand. This view explores a simplified timeline that communicates where the patient is in the journey without exposing unnecessary operational detail.</p><p class="small-copy">Design focus: reassurance, plain language and appropriate information access.</p></div>
+<figure><img alt="Orbit family mobile timeline view" src="assets/orbit-family-view.jpg"/><figcaption>04 / FAMILY TIMELINE — plain-language progress</figcaption></figure>
+</div>
+</div></section><section class="case-section"><div class="case-heading"><div class="num">05 / CASE STUDY</div><h2>QR-enabled tracking</h2></div><div class="case-content">
+<p class="lead">QR codes are explored as a way to support patient identification and stage-based tracking.</p>
+<div class="case-split"><img alt="Orbit QR workflow screen and tracking interface" src="assets/orbit-qr-workflow.jpg"/><div class="copy"><h3>Make the handoff visible</h3><p>The QR workflow is intended to connect a patient record with the stage update, so the movement through the journey can be recorded and viewed by the relevant roles.</p><p>The concept also considers the time associated with stage progression, creating a clearer operational picture.</p><p class="small-copy">This is a proposed flow shown in the prototype. It is not a claim of a live QR scanner or connected hospital system.</p></div></div>
+<figure class="case-image"><img alt="Orbit mobile interface views" src="assets/orbit-mobile-views.jpg"/><figcaption>Mobile exploration — family timeline and supporting mobile views</figcaption></figure>
+</div></section><section class="case-section"><div class="case-heading"><div class="num">06 / CASE STUDY</div><h2>The wider interface system</h2></div><div class="case-content">
+<p>The interface work includes a desktop dashboard, role-based screens and a family mobile timeline. The layouts share a visual language while adapting the level of detail to each user group.</p>
+<figure class="case-image"><img alt="Orbit core screens showing dashboard and role-based interfaces" src="assets/orbit-core-screens.jpg"/><figcaption>Core screen exploration — a consistent system across roles</figcaption></figure>
+<div class="callout"><p><b>Visual identity:</b> Orbit evolved from an earlier identity called Aurosync. The final direction uses a purple and lavender palette, a distinctive four-petal interlocking mark and the line “Smarter Flow. Better Care.”</p></div>
+</div></section><section class="case-section"><div class="case-heading"><div class="num">07 / CASE STUDY</div><h2>My process &amp; contribution</h2></div><div class="case-content">
+<p class="lead">Orbit is my personal project. I took ownership of the product exploration and design direction.</p>
+<div class="sticky-row">
+<div class="sticky-note"><b>01 / FRAME</b><p>Understand the patient journey and the coordination problem behind it.</p></div>
+<div class="sticky-note"><b>02 / MAP</b><p>Identify stakeholders, role responsibilities and the five journey stages.</p></div>
+<div class="sticky-note"><b>03 / STRUCTURE</b><p>Explore information architecture, role-based user flows and dashboard hierarchy.</p></div>
+<div class="sticky-note"><b>04 / DESIGN</b><p>Develop interface direction, QR-tracking concept and visual identity.</p></div>
+</div>
+<ul><li>Problem framing and workflow exploration.</li><li>Stakeholder and role identification.</li><li>Five-stage patient journey mapping.</li><li>Information architecture and role-based user flows.</li><li>Dashboard, interface and visual identity development.</li><li>Digital prototyping and development exploration.</li></ul>
+</div></section><section class="case-section"><div class="case-heading"><div class="num">08 / CASE STUDY</div><h2>Technology &amp; prototype status</h2></div><div class="case-content">
+<p>Orbit was explored as a web application using Node.js, Express.js, MongoDB and JSON Web Tokens (JWT). The proposed architecture supports patient information management, authentication, role-based access and patient-stage tracking.</p>
+<div class="callout"><p><b>Prototype status:</b> High-fidelity interface directions are visualised. The source presentation notes that a live EMR connection, QR scanner, messaging and patient-data integration were not demonstrated. Orbit is presented as a concept/prototype exploration, not a deployed hospital system.</p></div>
+</div></section><section class="case-section"><div class="case-heading"><div class="num">09 / CASE STUDY</div><h2>Recognition &amp; reflection</h2></div><div class="case-content">
+<p>Orbit was associated with the Aravind Eye Care System hackathon and selected among the Top 20 teams.</p>
+<p class="lead">The biggest shift for me was learning to design beyond individual screens.</p>
+<p>A dashboard may appear simple, but the experience behind it involves people, responsibilities, information and multiple interconnected processes. Orbit strengthened my interest in designing digital products that solve problems at a system level.</p>
+</div></section>
+<div class="next-project"><div><div class="kicker">NEXT UP / 02</div><h2>Aduku — Build.<br/>Play. Reimagine.</h2></div><a class="btn" href="aduku-case-study.html">Explore Aduku <span>↗</span></a></div>
+</main>
+<footer class="site-footer"><div class="case-wrap footer-row"><div><div class="kicker">END OF CASE STUDY</div><div class="footer-title">Smarter flow<span style="color:var(--violet)">.</span></div></div><div class="footer-meta"><a href="index.html#work">BACK TO SELECTED WORK ↗</a><br/>ANNA PHILIP · 2026</div></div></footer>
+<script>const wash=document.querySelector('.cursor-wash');window.addEventListener('pointermove',e=>{if(!wash)return;wash.style.setProperty('--mx',e.clientX+'px');wash.style.setProperty('--my',e.clientY+'px')},{passive:true});</script><aside aria-label="A little growing plant" class="plant-dock" id="plantDock"><div class="plant-caption">A LITTLE GROWING THING</div><svg aria-label="A plant that grows as you scroll" role="img" viewbox="0 0 70 130"><path class="stem" d="M35 118 C34 96 36 77 35 58 C34 40 35 25 35 12" id="plantStem"></path><path class="branch" d="M35 83 Q20 72 13 59 M35 69 Q51 60 58 47 M35 53 Q21 42 18 31 M35 39 Q48 30 52 18"></path><path class="leaf" d="M14 59 Q2 48 8 39 Q22 40 25 56 Q20 63 14 59Z"></path><path class="leaf" d="M56 48 Q68 37 65 28 Q51 30 47 44 Q50 51 56 48Z"></path><path class="leaf" d="M18 31 Q9 19 15 12 Q29 17 28 29 Q24 35 18 31Z"></path><path class="leaf" d="M52 19 Q59 7 53 2 Q40 9 42 20 Q47 24 52 19Z"></path><circle class="bloom" cx="13" cy="57" r="5"></circle><circle class="bloom" cx="58" cy="45" r="5"></circle><circle class="bloom" cx="18" cy="29" r="5"></circle><circle class="bloom" cx="52" cy="17" r="5"></circle><ellipse class="seed" cx="35" cy="120" rx="7" ry="4"></ellipse></svg><div class="growth-label" id="growthLabel">0% grown</div><div class="pluck-hint">A flower<br/>for the road</div><button id="pluckFlower" type="button">pluck one ✿</button></aside>
+<div aria-labelledby="flowerTitle" aria-modal="true" class="flower-modal" id="flowerModal" role="dialog"><div class="flower-box"><h3 id="flowerTitle">A little something to keep.</h3><p>I love plucking a flower or leaf from a day and preserving it. Before you go, pick one. Add your name and take a tiny piece of this visit with you.</p><input autocomplete="name" id="flowerName" maxlength="28" placeholder="Your name"/><div class="flower-actions"><button class="flower-save" id="saveFlower">Save my flower ↗</button><button class="flower-close" id="closeFlower">Maybe later</button></div><canvas height="1500" id="flowerCanvas" width="1200"></canvas></div></div>
+<script>(()=>{const dock=document.getElementById('plantDock');if(!dock)return;const stem=document.getElementById('plantStem'),label=document.getElementById('growthLabel'),modal=document.getElementById('flowerModal'),input=document.getElementById('flowerName');function update(){const max=document.documentElement.scrollHeight-innerHeight;const progress=max>0?Math.max(0,Math.min(1,scrollY/max)):0;const growth=Math.round(progress*100);dock.style.setProperty('--growth',growth);dock.style.setProperty('--leaf-opacity',Math.max(.12,growth/100));dock.style.setProperty('--bloom-opacity',Math.max(.06,(growth-45)/55));label.textContent=growth+'% grown';stem.style.strokeDashoffset=100-growth}addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();document.getElementById('pluckFlower').addEventListener('click',()=>{modal.classList.add('open');input.focus()});document.getElementById('closeFlower').addEventListener('click',()=>modal.classList.remove('open'));modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open')});const notes=[['You made it here. I hope something lovely follows.','A little reminder to notice the small things.'],['May your next detour be your favourite part.','Keep a little wonder in your pocket.'],['For the curious ones who look a little closer.','Hope today leaves you with a good story.'],['A tiny pause, just for you.','May you find colour in the ordinary.'],['Take this little bloom. Leave with a lighter heart.','Here’s to making room for happy accidents.'],['Some things are better kept than explained.','Hope you find a reason to smile today.']];const flowers=[{petal:'#e9b3cb',center:'#d99b45',name:'The Rosy One'},{petal:'#c4b2e8',center:'#e0bd65',name:'The Lavender Day'},{petal:'#efc58c',center:'#bd8e4d',name:'The Little Sunshine'},{petal:'#e8a6a0',center:'#d3a84f',name:'The Blush Bloom'},{petal:'#c7d5b4',center:'#d9b45e',name:'The Meadow Flower'},{petal:'#e4c4df',center:'#bd9b54',name:'The Soft Spell'}];document.getElementById('saveFlower').addEventListener('click',()=>{const name=input.value.trim()||'A friend',now=new Date(),stamp=now.toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'}),f=flowers[Math.floor(Math.random()*flowers.length)],msg=notes[Math.floor(Math.random()*notes.length)],c=document.getElementById('flowerCanvas'),ctx=c.getContext('2d');ctx.fillStyle='#faf6ed';ctx.fillRect(0,0,c.width,c.height);ctx.strokeStyle='#e4d9c8';ctx.lineWidth=3;ctx.strokeRect(42,42,c.width-84,c.height-84);ctx.textAlign='center';ctx.fillStyle='#8d806d';ctx.font='24px monospace';ctx.fillText('A LITTLE PIECE FROM ANNA',600,150);ctx.strokeStyle='#77936e';ctx.lineWidth=12;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(600,1060);ctx.bezierCurveTo(560,850,660,650,600,430);ctx.stroke();ctx.fillStyle='#8eaa80';ctx.beginPath();ctx.ellipse(510,760,90,38,-.6,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.ellipse(690,650,90,38,.6,0,Math.PI*2);ctx.fill();for(let i=0;i<9;i++){const a=i*Math.PI*2/9;ctx.save();ctx.translate(600,360);ctx.rotate(a);ctx.fillStyle=f.petal;ctx.beginPath();ctx.ellipse(0,-100,48,92,0,0,Math.PI*2);ctx.fill();ctx.restore()}ctx.fillStyle=f.center;ctx.beginPath();ctx.arc(600,360,48,0,Math.PI*2);ctx.fill();ctx.fillStyle='#3e3932';ctx.font='italic 58px Georgia';ctx.fillText('Hey '+name+',',600,1170);ctx.font='34px Georgia';ctx.fillText(msg[0],600,1240);ctx.font='30px Georgia';ctx.fillText(msg[1],600,1300);ctx.font='20px monospace';ctx.fillStyle='#8d806d';ctx.fillText(f.name+'  ·  '+stamp,600,1390);ctx.font='20px Georgia';ctx.fillText('I love keeping little things from lovely days. ♡',600,1450);const a=document.createElement('a');a.download='a-flower-for-'+name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'.png';a.href=c.toDataURL('image/png');a.click();modal.classList.remove('open')})})();</script><script id="scroll-story-script">
+        (() => {
+          const fill=document.querySelector('.scroll-progress span');
+          const update=()=>{const max=document.documentElement.scrollHeight-innerHeight; if(fill)fill.style.width=(max>0?scrollY/max*100:0)+'%';};
+          addEventListener('scroll',update,{passive:true}); addEventListener('resize',update); update();
+          if('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches){
+            const nodes=[...document.querySelectorAll('main section, .case-section, .about-thought, .learned-section')];
+            nodes.forEach(n=>n.classList.add('scroll-reveal'));
+            const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');io.unobserve(e.target);}}),{threshold:.06});
+            nodes.forEach(n=>io.observe(n));
+          }
+        })();
+        </script></body></html>

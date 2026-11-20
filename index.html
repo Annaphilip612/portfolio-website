@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/><meta content="#fbfaf7" name="theme-color"/><meta content="Anna Philip — Industrial Design, product thinking and UX." name="description"/><title>Anna Philip — Industrial Design &amp; Product Thinking · Anna Philip</title><style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap');
+:root{--paper:#fbfaf7;--white:#fff;--ink:#1e1d1b;--muted:#77736d;--line:#e8e4dc;--violet:#7c63d8;--orange:#dc815b;--sage:#839b82;--yellow:#e7c36c;--serif:Georgia,'Times New Roman',serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button{font:inherit}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+.site-nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20;background:rgba(251,250,247,.88);backdrop-filter:blur(16px)}
+.nav-inner{width:min(1160px,calc(100% - 48px));margin:auto;display:flex;align-items:center;justify-content:space-between}
+.wordmark{font:700 17px 'Space Grotesk';letter-spacing:-.07em}.wordmark i{font-style:normal;color:var(--violet)}
+.nav-links{display:flex;gap:28px;align-items:center;font-size:12px;color:#625f59}.nav-links a:hover{color:var(--violet)}
+.nav-note{font:12px 'DM Mono';color:#99938a}
+.kicker{font:500 10px 'DM Mono';letter-spacing:.13em;text-transform:uppercase;color:#8a8379}
+.display{font:600 clamp(58px,9vw,116px)/.91 'Space Grotesk';letter-spacing:-.09em}
+.h2{font:600 clamp(36px,5.3vw,65px)/.98 'Space Grotesk';letter-spacing:-.075em;margin:0}
+.body-copy{font-size:15px;line-height:1.85;color:#68645e}
+.small-copy{font-size:12px;line-height:1.7;color:var(--muted)}
+.hand{font:500 24px 'Caveat';color:var(--violet)}
+.rule{height:1px;background:var(--line);margin:0}
+.btn{display:inline-flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--ink);font-size:12px;font-weight:600;transition:gap .2s}.btn:hover{gap:20px}
+.pill{display:inline-flex;border:1px solid var(--line);border-radius:99px;padding:8px 12px;font:10px 'DM Mono';color:#77716a}
+.section-pad{padding:100px 0}
+.site-footer{padding:55px 0 35px;border-top:1px solid var(--line);margin-top:50px}
+.footer-row{display:flex;align-items:end;justify-content:space-between;gap:30px}
+.footer-title{font:600 clamp(38px,7vw,80px)/.95 'Space Grotesk';letter-spacing:-.08em;margin:10px 0 0}
+.footer-meta{font:10px 'DM Mono';color:var(--muted);line-height:1.8;text-align:right}
+.cursor-wash{position:fixed;z-index:-1;inset:0;pointer-events:none;opacity:.72;background:radial-gradient(500px circle at var(--mx,50%) var(--my,25%),rgba(185,166,255,.34),transparent 64%),radial-gradient(360px circle at calc(var(--mx,50%) + 18%) calc(var(--my,25%) + 10%),rgba(255,198,157,.24),transparent 68%),radial-gradient(420px circle at calc(var(--mx,50%) - 18%) calc(var(--my,25%) + 24%),rgba(170,218,197,.18),transparent 70%);transition:background .09s linear}
+::selection{background:#dcd2fb;color:#292139}
+@media(max-width:700px){.wrap,.nav-inner{width:min(100% - 32px,1160px)}.site-nav{height:66px}.nav-links{gap:15px;font-size:11px}.nav-note{display:none}.section-pad{padding:70px 0}.footer-row{display:block}.footer-meta{text-align:left;margin-top:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+
+.hero-home{min-height:calc(92vh - 76px);display:flex;align-items:center;position:relative;padding:85px 0 75px;overflow:hidden}
+.hero-home:before{content:'✳';position:absolute;right:7%;top:16%;font-size:clamp(70px,12vw,150px);font-weight:400;color:#d8cef5;transform:rotate(12deg);animation:slowspin 26s linear infinite}
+@keyframes slowspin{to{transform:rotate(372deg)}}
+.hero-home .wrap{position:relative;z-index:1}.hero-overline{display:flex;gap:12px;align-items:center;margin-bottom:32px}
+.hero-overline:before{content:'';width:34px;height:1px;background:var(--violet)}
+.hero-home h1{max-width:1050px;margin:0}.hero-home h1 em{font:italic 500 .88em var(--serif);letter-spacing:-.07em;color:var(--violet)}
+.hero-bottom{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-top:40px}
+.hero-intro{max-width:470px;font-size:15px;line-height:1.8;color:#6f6a63}.hero-links{display:flex;gap:25px;flex-wrap:wrap}
+.ticker{overflow:hidden;border-block:1px solid var(--line);background:#f4f1eb;padding:13px 0}
+.ticker-track{display:flex;width:max-content;gap:38px;animation:marquee 36s linear infinite;font:10px 'DM Mono';letter-spacing:.15em;color:#79736a}
+.ticker-track span:after{content:'✳';margin-left:38px;color:var(--orange)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.work-intro{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:65px}
+.work-intro p{max-width:300px}.project-row{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%;align-items:center;padding:35px 0 90px}
+.project-row.reverse{grid-template-columns:1.2fr .8fr}.project-row.reverse .project-copy{order:2}.project-row.reverse .project-visual{order:1}
+.project-index{font:11px 'DM Mono';color:#938b80;display:flex;align-items:center;gap:12px}.project-index:after{content:'';height:1px;width:42px;background:#c8c1b5}
+.project-copy h3{font:600 clamp(45px,6.2vw,78px)/.92 'Space Grotesk';letter-spacing:-.085em;margin:18px 0 8px}
+.project-copy .tagline{font:italic 22px var(--serif);color:var(--violet);margin:0 0 22px}
+.project-copy p{font-size:14px;line-height:1.8;color:#706b64;max-width:380px}
+.project-copy .pills{display:flex;gap:7px;flex-wrap:wrap;margin:24px 0}
+.project-visual{position:relative;min-width:0}.project-visual a{display:block}
+.project-visual img{width:100%;height:430px;object-fit:cover;border-radius:3px;transition:transform .45s cubic-bezier(.2,.8,.2,1),filter .4s}
+.project-visual:hover img{transform:translateY(-7px) rotate(-.5deg);filter:saturate(1.06)}
+.project-visual .image-caption{font:10px 'DM Mono';color:#928b81;margin-top:12px;display:flex;justify-content:space-between}
+.project-visual .scribble{position:absolute;font:24px 'Caveat';color:var(--violet);right:-20px;top:-25px;transform:rotate(7deg)}
+.project-row.reverse .project-visual img{height:480px}
+.work-divider{height:1px;background:var(--line)}
+.archive-list{border-top:1px solid var(--line)}
+.archive-link{display:grid;grid-template-columns:70px 1fr 1fr 25px;gap:20px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);transition:padding .2s}
+.archive-link:hover{padding-left:12px}.archive-link .num{font:11px 'DM Mono';color:#a39a8e}.archive-link strong{font:600 22px 'Space Grotesk';letter-spacing:-.04em}.archive-link small{font-size:12px;color:var(--muted)}.archive-link .arrow{font-size:20px;color:var(--violet)}
+.about-teaser{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:center}
+.about-teaser .teaser-photo{position:relative}.about-teaser img{width:100%;height:440px;object-fit:cover;object-position:center 35%;border-radius:2px}
+.about-teaser .photo-note{position:absolute;bottom:-15px;left:-18px;background:#f0e9d9;padding:13px 18px;font:20px 'Caveat';transform:rotate(-4deg)}
+.about-teaser h2{font:600 clamp(42px,6vw,72px)/.94 'Space Grotesk';letter-spacing:-.08em;margin:12px 0 22px}
+.contact-band{background:#24221f;color:#fbfaf7;padding:65px 0;margin-top:45px}
+.contact-band .kicker{color:#c4b5fa}.contact-band h2{font:600 clamp(45px,8vw,94px)/.9 'Space Grotesk';letter-spacing:-.09em;margin:18px 0 24px}
+.contact-band .btn{color:#fff;border-color:#b8b0a6}.contact-band p{color:#c3beb7;max-width:470px;font-size:14px;line-height:1.8}
+@media(max-width:760px){.hero-home{min-height:auto;padding:85px 0 70px}.hero-bottom{display:block}.hero-links{margin-top:22px}.hero-home:before{right:2%;top:7%}.work-intro{display:block}.project-row,.project-row.reverse{grid-template-columns:1fr;gap:26px;padding:20px 0 65px}.project-row.reverse .project-copy,.project-row.reverse .project-visual{order:initial}.project-visual img,.project-row.reverse .project-visual img{height:auto;max-height:420px;aspect-ratio:1.1;object-fit:cover}.archive-link{grid-template-columns:34px 1fr 20px;gap:12px}.archive-link small{grid-column:2}.archive-link .arrow{grid-column:3;grid-row:1/3}.about-teaser{grid-template-columns:1fr;gap:35px}.about-teaser img{height:360px}.about-teaser .photo-note{left:0}.hero-home h1{font-size:clamp(52px,13vw,88px)}}
+
+.resume-strip{padding:88px 0 82px;background:rgba(255,255,255,.55);border-block:1px solid var(--line)}.resume-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:50px}.resume-head p{max-width:330px}.resume-columns{display:grid;grid-template-columns:190px 1fr;gap:40px;padding:28px 0;border-top:1px solid var(--line)}.resume-label{font:10px 'DM Mono';letter-spacing:.13em;color:#938b80;padding-top:5px}.resume-items{display:grid;gap:0}.resume-item{display:grid;grid-template-columns:150px 1fr;gap:22px;padding:0 0 25px;margin-bottom:25px;border-bottom:1px dashed #e6e0d6}.resume-item:last-child{border:0;margin:0;padding-bottom:0}.resume-date{font:10px 'DM Mono';color:#9a9185;padding-top:5px}.resume-item h3{font:600 19px 'Space Grotesk';letter-spacing:-.04em;margin:0 0 7px}.resume-item h3 span{font:italic 16px Georgia;color:#8b8174}.resume-item p,.resume-skills p{font-size:12px;line-height:1.8;color:#6f6a63;margin:0;max-width:760px}.resume-highlights{display:flex;flex-wrap:wrap;gap:9px}.resume-highlights span{background:#f0ebfa;border:1px solid #e2d9f6;border-radius:3px;padding:10px 13px;font:11px 'DM Mono';color:#65528e}.resume-skills{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.resume-skills b{display:block;font:600 13px 'Space Grotesk';margin-bottom:8px}.resume-foot{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:20px;font:11px 'DM Mono';color:#8e877e}.resume-foot a{color:var(--violet)}
+@media(max-width:760px){.resume-head{display:block}.resume-head p{margin-top:18px}.resume-columns{grid-template-columns:1fr;gap:18px}.resume-item{grid-template-columns:1fr;gap:6px}.resume-skills{grid-template-columns:1fr}.resume-foot{display:block}.resume-foot a{display:block;margin-top:10px}}
+
+
+.plant-dock{position:fixed;right:17px;top:50%;transform:translateY(-50%);z-index:80;width:76px;padding:12px 8px 13px;background:linear-gradient(145deg,rgba(255,255,255,.62),rgba(245,240,255,.38));backdrop-filter:blur(18px) saturate(150%);-webkit-backdrop-filter:blur(18px) saturate(150%);border:1px solid rgba(255,255,255,.78);border-radius:24px;box-shadow:0 12px 35px rgba(70,55,100,.14),inset 0 1px 0 rgba(255,255,255,.85);text-align:center}.plant-dock:before{content:'';position:absolute;inset:3px;border:1px solid rgba(150,130,190,.13);border-radius:20px;pointer-events:none}.plant-dock svg{width:56px;height:112px;overflow:visible}.plant-dock .plant-caption{font:7px 'DM Mono';letter-spacing:.08em;color:#777083;margin:3px 0 7px}.plant-dock .growth-label{font:8px 'DM Mono';color:#777;margin-top:2px}.plant-dock .stem{stroke:#6c956c;stroke-width:3;stroke-linecap:round;fill:none;stroke-dasharray:100;stroke-dashoffset:calc(100 - var(--growth,0)*1)}.plant-dock .branch{stroke:#6c956c;stroke-width:2.5;stroke-linecap:round;fill:none;opacity:var(--leaf-opacity,.1)}.plant-dock .leaf{fill:#8fb58b;opacity:var(--leaf-opacity,.1)}.plant-dock .bloom{fill:#d9a5d9;opacity:var(--bloom-opacity,.08)}.plant-dock .seed{fill:#b58b58}.plant-dock .pluck-hint{font:8px/1.4 'DM Mono';color:#766a83;margin:8px 0 5px}.plant-dock button{display:block;width:100%;border:1px solid rgba(143,121,180,.22);background:rgba(255,255,255,.58);color:#67577d;border-radius:16px;padding:7px 3px;font:8px 'DM Mono';cursor:pointer}.flower-modal{position:fixed;inset:0;z-index:120;background:rgba(35,31,27,.45);display:none;place-items:center;padding:20px}.flower-modal.open{display:grid}.flower-box{background:#fffdf8;width:min(420px,100%);padding:28px;border-radius:16px;box-shadow:0 20px 80px rgba(0,0,0,.2)}.flower-box h3{font:600 28px 'Space Grotesk';letter-spacing:-.05em;margin:0 0 8px}.flower-box p{font-size:13px;color:#777;line-height:1.6}.flower-box input{width:100%;padding:13px;border:1px solid #ded8ce;border-radius:7px;font:14px 'DM Sans';margin:10px 0 15px}.flower-actions{display:flex;gap:10px}.flower-actions button{border:0;border-radius:30px;padding:11px 15px;cursor:pointer;font:11px 'DM Mono'}.flower-save{background:#765b9d;color:white}.flower-close{background:#eee9e1;color:#514a42}.flower-modal canvas{display:none}
+@media(max-width:760px){.plant-dock{right:5px;top:auto;bottom:12px;transform:none;width:58px;padding:6px 5px;border-radius:14px}.plant-dock svg{width:42px;height:75px}.plant-dock button{font-size:8px;padding:6px 1px}.plant-dock .plant-caption{font-size:7px}}
+
+/* V10: quieter editorial pacing and an Apple-like reading rhythm */
+.scroll-progress{position:fixed;z-index:100;left:0;right:0;top:0;height:3px;background:rgba(30,29,27,.05);pointer-events:none}
+.scroll-progress span{display:block;width:0;height:100%;background:linear-gradient(90deg,#9a82e8,#e9a98e,#9bc5ae);box-shadow:0 0 12px rgba(154,130,232,.35);transition:width .08s linear}
+.scroll-reveal{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.7,.2,1)}
+.scroll-reveal.is-visible{opacity:1;transform:translateY(0)}
+.neuropulse-feature{padding-top:8px}
+.neuropulse-feature .project-visual img{object-fit:contain;background:#f1eef5}
+.resume-skills{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 38px}
+.resume-skills>div{padding:18px 0;border-top:1px solid var(--line)}
+.resume-skills b{font:600 15px 'Space Grotesk';text-transform:capitalize}
+.resume-skills p{font-size:12px;line-height:1.9;color:#706b64;margin:9px 0 0}
+@media(max-width:760px){.resume-skills{grid-template-columns:1fr}.scroll-reveal{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.scroll-reveal{opacity:1;transform:none;transition:none}}
+</style></head><body><div aria-hidden="true" class="scroll-progress"><span></span></div><div aria-hidden="true" class="cursor-wash"></div><nav class="site-nav"><div class="nav-inner"><a class="wordmark" href="index.html">ANNA <i>PHILIP.</i></a><div class="nav-links"><a href="index.html#experience">Experience</a><a href="index.html#work">Work</a><a href="index.html#archive">Archive</a><a href="about.html">About</a><a href="index.html#contact">Contact</a></div><div class="nav-note">DESIGN / 2026</div></div></nav>
+<main>
+<header class="hero-home"><div class="wrap">
+<div class="hero-overline kicker">INDUSTRIAL DESIGN · PRODUCT THINKING · UX</div>
+<h1 class="display">I have a problem<br/>with <em>problems.</em></h1>
+<div class="hero-bottom">
+<p class="hero-intro">I'm Anna — an Industrial Design student who likes understanding people, questioning everyday experiences and figuring out how things could work better. My work moves between products, digital experiences and the systems around them.</p>
+<div class="hero-links"><a class="btn" href="#work">Have a look around <span>↘</span></a><a class="btn" href="about.html">A little about me <span>↗</span></a></div>
+</div>
+</div></header>
+<div class="ticker"><div class="ticker-track"><span>OBSERVE</span><span>QUESTION</span><span>MAKE</span><span>TEST</span><span>RETHINK</span><span>OBSERVE</span><span>QUESTION</span><span>MAKE</span><span>TEST</span><span>RETHINK</span></div></div>
+<section class="resume-strip" id="experience"><div class="wrap">
+<div class="resume-head"><div><div class="kicker">01 / THE JOURNEY SO FAR</div><h2 class="h2">A few places<br/>I've learned by doing.</h2></div><p class="body-copy">A quick scroll through the work, people and projects that have shaped how I think. The details matter; so do the things I learnt along the way.</p></div>
+<div class="resume-columns"><div class="resume-label">EXPERIENCE</div><div class="resume-items">
+<article class="resume-item"><div class="resume-date">JUN — JUL 2026</div><div><h3>Product Design Intern <span>· Funskool, Chennai</span></h3><p>Helped with market research and concept generation across toy and game ideas, exploring ways to add a distinctive play experience. A visit to the factory gave me a much clearer view of how ideas move through production, quality checks, materials and manufacturing realities.</p></div></article>
+<article class="resume-item"><div class="resume-date">DEC 2025 — FEB 2026</div><div><h3>Student Event Manager <span>· Riviera 2026, VIT</span></h3><p>Conceptualised 20+ installations using recycled and repurposed materials; coordinated 20 coordinators and 150+ volunteers across creative execution, task allocation and installation delivery.</p></div></article>
+<article class="resume-item"><div class="resume-date">JUL — SEP 2025</div><div><h3>UI/UX Designer (Freelance) <span>· UnifydBI Pvt. Ltd.</span></h3><p>Translated business requirements across product verticals into design concepts and testable UX prototypes. Contributed to interface design and visual communication across UI, print and social media with cross-functional teams.</p></div></article>
+<article class="resume-item"><div class="resume-date">2023 — 2025</div><div><h3>Creative Intern (Freelance) <span>· Transpassage Overseas Education Consultants</span></h3><p>Developed brand identity, social media creatives and campaign assets through consistent visual storytelling; design-led content helped improve social media engagement by approximately 30%.</p></div></article>
+</div></div>
+<div class="resume-columns"><div class="resume-label">EDUCATION</div><div class="resume-items"><article class="resume-item"><div class="resume-date">2023 — 2027</div><div><h3>Bachelor of Design, Industrial Design <span>· VIT Vellore</span></h3><p>CGPA: 8.61 / 10</p></div></article></div></div>
+<div class="resume-columns"><div class="resume-label">SELECTED HIGHLIGHTS</div><div class="resume-highlights"><span>3rd Place · StartupTN Innovation Program</span><span>Top 20 · Aravind Eye Hospital Hackathon</span><span>Innovation Ambassador · IIC</span><span>Student Coordinator · Riviera 2025</span><span>Student Coordinator · Gravitas 2024 &amp; 2025</span><span>NPTEL Entrepreneurship · IIT Bombay (A Grade)</span><span>Innovation Ambassador Training · Govt. of India</span></div></div>
+<div class="resume-columns"><div class="resume-label">WHAT I WORK WITH</div><div class="resume-skills"><div><b>Research &amp; discovery</b><p>User research · Research synthesis · Problem framing · Market research · Competitive analysis · Opportunity identification</p></div><div><b>Design &amp; experience</b><p>Human-centred design · UX design · Interaction design · Information architecture · Prototyping · Usability testing</p></div><div><b>Strategy &amp; innovation</b><p>Product strategy · Design thinking · Innovation management · Business model development · Product roadmapping · Concept development</p></div><div><b>Systems &amp; sustainability</b><p>Service design · Systems thinking · Circular design · Sustainable innovation · Service blueprinting · Life cycle assessment</p></div><div><b>Leadership &amp; collaboration</b><p>Project management · Cross-functional collaboration · Stakeholder management · Workshop facilitation · Design storytelling</p></div><div><b>Technology &amp; analytics</b><p>AI-assisted workflows · Qualitative analysis · Quantitative analysis · Data-driven decision making · Rapid experimentation</p></div><div><b>Tools</b><p>Figma · FigJam · Miro · Adobe Illustrator · Adobe Photoshop · Fusion 360 · Rhino · Framer · Lovable · Claude · Antigravity · Notion · Excel · Microsoft Office</p></div></div></div>
+<div class="resume-foot"><span>Want the compact version?</span><a href="#contact">Let's talk ↗</a></div>
+</div></section>
+<section class="section-pad" id="work"><div class="wrap">
+<div class="work-intro"><div><div class="kicker">01 / SELECTED WORK</div><h2 class="h2">A couple of things<br/>I've been thinking about.</h2></div><p class="body-copy">Two projects, two very different scales. Orbit explores how a complex hospital workflow can feel clearer; Aduku explores how a toy can keep becoming something new.</p></div>
+<article class="project-row">
+<div class="project-copy"><div class="project-index">01 / DIGITAL PRODUCT · TEAM PROJECT</div><h3>Orbit<span style="color:var(--violet)">.</span></h3><div class="tagline">Smarter flow. Better care.</div><p>A patient-flow concept for operating theatre workflows — bringing a shared view to the people, stages and handoffs that make up a patient's journey.</p><div class="pills"><span class="pill">Healthcare UX</span><span class="pill">Workflow design</span><span class="pill">Product thinking</span></div><a class="btn" href="orbit-case-study.html">Step inside the case study <span>↗</span></a></div>
+<div class="project-visual"><a href="orbit-case-study.html"><img alt="Orbit operations dashboard, surgeon and family views" src="assets/orbit-device-overview.jpg"/></a><div class="scribble">one connected journey ↗</div><div class="image-caption"><span>SCREEN EXPLORATION / ROLE-BASED VIEWS</span><span>01 — 02</span></div></div>
+</article>
+<div class="work-divider"></div>
+<article class="project-row reverse">
+<div class="project-copy"><div class="project-index">02 / PHYSICAL PRODUCT · TEAM PROJECT</div><h3>Aduku<span style="color:var(--orange)">.</span></h3><div class="tagline" style="color:#b9784f">Build. Play. Reimagine.</div><p>A modular wooden toy system designed around interchangeable pieces, open-ended play and the possibility of making something different every time.</p><div class="pills"><span class="pill">Product design</span><span class="pill">Modular play</span><span class="pill">Material exploration</span></div><a class="btn" href="aduku-case-study.html">See how it comes together <span>↗</span></a></div>
+<div class="project-visual"><a href="aduku-case-study.html"><img alt="Aduku modular wooden train product render" src="assets/aduku-train-original.webp"/></a><div class="scribble" style="color:#b9784f;right:auto;left:-18px;top:-20px">one set, many possibilities ↗</div><div class="image-caption"><span>MODULAR WOODEN TOYS / PRODUCT FAMILY</span><span>02 — 02</span></div></div>
+</article>
+</div></section>
+<section class="section-pad" id="archive" style="padding-top:30px"><div class="wrap">
+<div class="work-intro"><div><div class="kicker">02 / THE REST OF THE SKETCHBOOK</div><h2 class="h2">Other things I've<br/>worked on.</h2></div><p class="body-copy">A few more questions, experiments and ideas from different corners of design.</p></div>
+<div class="archive-list">
+<a class="archive-link" href="neuropulse-case-study.html">
+<span class="num">03</span>
+<strong>NeuroPulse</strong>
+<small>MedTech · Wearable screening concept · Team project</small>
+<span class="arrow">↗</span>
+</a><a class="archive-link" href="glucosense-case-study.html"><span class="num">04</span><strong>GlucoSense</strong><small>Medical product design · Healthcare</small><span class="arrow">↗</span></a>
+<a class="archive-link" href="syntrix-case-study.html"><span class="num">05</span><strong>Syntrix / PWAT</strong><small>HR Tech · EdTech · Startup concept</small><span class="arrow">↗</span></a>
+<a class="archive-link" href="car-garage-case-study.html"><span class="num">06</span><strong>Car Garage Playset</strong><small>Funskool · Toy development internship</small><span class="arrow">↗</span></a>
+<a class="archive-link" href="pathfinder-case-study.html">
+<span class="num">07</span>
+<strong>Pathfinder</strong>
+<small>Education &amp; career discovery platform · Team project</small>
+<span class="arrow">↗</span>
+</a></div>
+</div></section>
+<section class="section-pad" style="padding-top:30px"><div class="wrap about-teaser">
+<div class="teaser-photo"><img alt="A personal photograph from a climbing session" src="assets/about-climbing.webp"/><span class="photo-note">trying, falling, trying again.</span></div>
+<div><div class="kicker">03 / OUTSIDE THE STUDIO</div><h2>Design is a big part of me. Not the whole thing.</h2><p class="body-copy">I collect little moments, get curious about places and people, and find that some of my best ideas show up when I'm doing something completely unrelated to a screen.</p><a class="btn" href="about.html">A little more about me <span>↗</span></a></div>
+</div></section>
+<section class="contact-band" id="contact"><div class="wrap"><div class="kicker">04 / SAY HELLO</div><h2>Have a good<br/>problem?</h2><p>I'm always up for thoughtful conversations, interesting collaborations and new things to learn. Drop me a note.</p><a class="btn" href="mailto:philip.anna1203@gmail.com">Email me <span>↗</span></a><a class="btn" href="tel:+91638030270">+91 63803 0270 <span>↗</span></a><a class="btn" href="https://www.linkedin.com/in/anna-philip-290965278/" rel="noopener" target="_blank">LinkedIn <span>↗</span></a></div></section>
+</main>
+<footer class="site-footer"><div class="wrap footer-row"><div><div class="kicker">MADE WITH CURIOSITY</div><div class="footer-title">Anna Philip<span style="color:var(--violet)">.</span></div></div><div class="footer-meta">INDUSTRIAL DESIGN · PRODUCT THINKING · UX<br/>CHENNAI, INDIA · © 2026</div></div></footer>
+<script>const wash=document.querySelector('.cursor-wash');window.addEventListener('pointermove',e=>{if(!wash)return;wash.style.setProperty('--mx',e.clientX+'px');wash.style.setProperty('--my',e.clientY+'px')},{passive:true});</script><aside aria-label="A little growing plant" class="plant-dock" id="plantDock"><div class="plant-caption">A LITTLE GROWING THING</div><svg aria-label="A plant that grows as you scroll" role="img" viewbox="0 0 70 130"><path class="stem" d="M35 118 C34 96 36 77 35 58 C34 40 35 25 35 12" id="plantStem"></path><path class="branch" d="M35 83 Q20 72 13 59 M35 69 Q51 60 58 47 M35 53 Q21 42 18 31 M35 39 Q48 30 52 18"></path><path class="leaf" d="M14 59 Q2 48 8 39 Q22 40 25 56 Q20 63 14 59Z"></path><path class="leaf" d="M56 48 Q68 37 65 28 Q51 30 47 44 Q50 51 56 48Z"></path><path class="leaf" d="M18 31 Q9 19 15 12 Q29 17 28 29 Q24 35 18 31Z"></path><path class="leaf" d="M52 19 Q59 7 53 2 Q40 9 42 20 Q47 24 52 19Z"></path><circle class="bloom" cx="13" cy="57" r="5"></circle><circle class="bloom" cx="58" cy="45" r="5"></circle><circle class="bloom" cx="18" cy="29" r="5"></circle><circle class="bloom" cx="52" cy="17" r="5"></circle><ellipse class="seed" cx="35" cy="120" rx="7" ry="4"></ellipse></svg><div class="growth-label" id="growthLabel">0% grown</div><div class="pluck-hint">A flower<br/>for the road</div><button id="pluckFlower" type="button">pluck one ✿</button></aside>
+<div aria-labelledby="flowerTitle" aria-modal="true" class="flower-modal" id="flowerModal" role="dialog"><div class="flower-box"><h3 id="flowerTitle">A little something to keep.</h3><p>I love plucking a flower or leaf from a day and preserving it. Before you go, pick one. Add your name and take a tiny piece of this visit with you.</p><input autocomplete="name" id="flowerName" maxlength="28" placeholder="Your name"/><div class="flower-actions"><button class="flower-save" id="saveFlower">Save my flower ↗</button><button class="flower-close" id="closeFlower">Maybe later</button></div><canvas height="1500" id="flowerCanvas" width="1200"></canvas></div></div>
+<script>(()=>{const dock=document.getElementById('plantDock');if(!dock)return;const stem=document.getElementById('plantStem'),label=document.getElementById('growthLabel'),modal=document.getElementById('flowerModal'),input=document.getElementById('flowerName');function update(){const max=document.documentElement.scrollHeight-innerHeight;const progress=max>0?Math.max(0,Math.min(1,scrollY/max)):0;const growth=Math.round(progress*100);dock.style.setProperty('--growth',growth);dock.style.setProperty('--leaf-opacity',Math.max(.12,growth/100));dock.style.setProperty('--bloom-opacity',Math.max(.06,(growth-45)/55));label.textContent=growth+'% grown';stem.style.strokeDashoffset=100-growth}addEventListener('scroll',update,{passive:true});addEventListener('resize',update);update();document.getElementById('pluckFlower').addEventListener('click',()=>{modal.classList.add('open');input.focus()});document.getElementById('closeFlower').addEventListener('click',()=>modal.classList.remove('open'));modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open')});const notes=[['You made it here. I hope something lovely follows.','A little reminder to notice the small things.'],['May your next detour be your favourite part.','Keep a little wonder in your pocket.'],['For the curious ones who look a little closer.','Hope today leaves you with a good story.'],['A tiny pause, just for you.','May you find colour in the ordinary.'],['Take this little bloom. Leave with a lighter heart.','Here’s to making room for happy accidents.'],['Some things are better kept than explained.','Hope you find a reason to smile today.']];const flowers=[{petal:'#e9b3cb',center:'#d99b45',name:'The Rosy One'},{petal:'#c4b2e8',center:'#e0bd65',name:'The Lavender Day'},{petal:'#efc58c',center:'#bd8e4d',name:'The Little Sunshine'},{petal:'#e8a6a0',center:'#d3a84f',name:'The Blush Bloom'},{petal:'#c7d5b4',center:'#d9b45e',name:'The Meadow Flower'},{petal:'#e4c4df',center:'#bd9b54',name:'The Soft Spell'}];document.getElementById('saveFlower').addEventListener('click',()=>{const name=input.value.trim()||'A friend',now=new Date(),stamp=now.toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'}),f=flowers[Math.floor(Math.random()*flowers.length)],msg=notes[Math.floor(Math.random()*notes.length)],c=document.getElementById('flowerCanvas'),ctx=c.getContext('2d');ctx.fillStyle='#faf6ed';ctx.fillRect(0,0,c.width,c.height);ctx.strokeStyle='#e4d9c8';ctx.lineWidth=3;ctx.strokeRect(42,42,c.width-84,c.height-84);ctx.textAlign='center';ctx.fillStyle='#8d806d';ctx.font='24px monospace';ctx.fillText('A LITTLE PIECE FROM ANNA',600,150);ctx.strokeStyle='#77936e';ctx.lineWidth=12;ctx.lineCap='round';ctx.beginPath();ctx.moveTo(600,1060);ctx.bezierCurveTo(560,850,660,650,600,430);ctx.stroke();ctx.fillStyle='#8eaa80';ctx.beginPath();ctx.ellipse(510,760,90,38,-.6,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.ellipse(690,650,90,38,.6,0,Math.PI*2);ctx.fill();for(let i=0;i<9;i++){const a=i*Math.PI*2/9;ctx.save();ctx.translate(600,360);ctx.rotate(a);ctx.fillStyle=f.petal;ctx.beginPath();ctx.ellipse(0,-100,48,92,0,0,Math.PI*2);ctx.fill();ctx.restore()}ctx.fillStyle=f.center;ctx.beginPath();ctx.arc(600,360,48,0,Math.PI*2);ctx.fill();ctx.fillStyle='#3e3932';ctx.font='italic 58px Georgia';ctx.fillText('Hey '+name+',',600,1170);ctx.font='34px Georgia';ctx.fillText(msg[0],600,1240);ctx.font='30px Georgia';ctx.fillText(msg[1],600,1300);ctx.font='20px monospace';ctx.fillStyle='#8d806d';ctx.fillText(f.name+'  ·  '+stamp,600,1390);ctx.font='20px Georgia';ctx.fillText('I love keeping little things from lovely days. ♡',600,1450);const a=document.createElement('a');a.download='a-flower-for-'+name.toLowerCase().replace(/[^a-z0-9]+/g,'-')+'.png';a.href=c.toDataURL('image/png');a.click();modal.classList.remove('open')})})();</script><script id="scroll-story-script">
+    (() => {
+      const fill = document.querySelector('.scroll-progress span');
+      const update = () => {
+        const max = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = max > 0 ? (window.scrollY / max) * 100 : 0;
+        if (fill) fill.style.width = pct + '%';
+      };
+      window.addEventListener('scroll', update, {passive:true});
+      window.addEventListener('resize', update);
+      update();
+      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.querySelectorAll('.resume-strip,.section-pad,.project-row,.about-teaser,.contact-band').forEach(el => {
+          el.classList.add('scroll-reveal');
+        });
+        const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+        }), {threshold:0.08});
+        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+      }
+    })();
+    </script></body></html>
